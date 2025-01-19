@@ -2,7 +2,7 @@ package SOLID;
 
 public class Visa extends CreditCard implements RefundCompatibleCC {
     public RefundLogic refundAlgorithm;
-    public Visa(SameWalletRefund sameWalletRefund) {
+    public Visa(SameInstrumentRefund sameInstrumentRefund) {
         this.refundAlgorithm = new SameInstrumentRefund();
     }
     @Override
